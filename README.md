@@ -34,7 +34,8 @@ n.save_weights(weights_path,bias_path)
 n.load_weights(weights_path,bias_path)
 #Load weights from disk.
 #load_weights is
-#wrapped with classmethod decorator
+#wrapped with
+#classmethod decorator
 #so after weights
 #and bias has been
 #saved with n.save_weights(...)
@@ -46,10 +47,10 @@ n.load_weights(weights_path,bias_path)
 #n=MLP.load_weights(...)
 n.predict(data)
 #n.predicts can
-# then be used to
+#then be used to
 #make predictions...
 
-# 😄
+#😄
 
 
 

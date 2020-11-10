@@ -14,7 +14,11 @@ from MultilayerPerceptron import MLP
 ...#Your preferred
 #Preprocessing Technique
 #And Loading Of Data
+
+
 Layers=[60,40,20,10]
+
+
 #The MLP
 #has 2 hidden Layers
 #,len(Layers)-2.
@@ -25,13 +29,20 @@ Layers=[60,40,20,10]
 #instance of training data
 #Last item of Layers
 #10, is number of classes
+
+
 n=MLP(Layers)
+
 n.train(data,labels, epochs,batchsize,l_r,one_hot=True)
+
 #l_r is the learning_rate
 #save weights with
 #save_weights function
+
 n.save_weights(weights_path,bias_path)
+
 n.load_weights(weights_path,bias_path)
+
 #Load weights from disk.
 #load_weights is
 #wrapped with
@@ -45,7 +56,9 @@ n.load_weights(weights_path,bias_path)
 #Without initializing
 #the layers...E.g 
 #n=MLP.load_weights(...)
+
 n.predict(data)
+
 #n.predicts can
 #then be used to
 #make predictions...

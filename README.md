@@ -7,7 +7,9 @@ The first layer of the list to be passed should be the Number of features and th
 
 #Example usage
 #Import class
+
 from MultilayerPerceptron import MLP
+
 ...
 ...#Your preferred
 #Preprocessing Technique
@@ -19,8 +21,8 @@ Layers=[60,40,20,10]
 #first item
 #of Layers,60,
 #is the amount of
-# features in each
-# instance of training data
+#features in each
+#instance of training data
 #Last item of Layers
 #10, is number of classes
 n=MLP(Layers)
@@ -37,8 +39,8 @@ n.load_weights(weights_path,bias_path)
 #and bias has been
 #saved with n.save_weights(...)
 #The weights can
-# then be used to make
-# predictions for a later time
+#then be used to make
+#predictions for a later time
 #Without initializing
 #the layers...E.g 
 #n=MLP.load_weights(...)

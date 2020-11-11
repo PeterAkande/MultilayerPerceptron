@@ -6,12 +6,15 @@ The network is initialized with the training set and the accompanying labels and
 The first layer of the list to be passed should be the Number of features and the last item of the list should be the amount of classes.
 
 #Example usage
+
 #Import class
 
 from MultilayerPerceptron import MLP
 
 ...
-...#Your preferred
+...
+
+#Your preferred
 #Preprocessing Technique
 #And Loading Of Data
 
@@ -19,16 +22,16 @@ from MultilayerPerceptron import MLP
 Layers=[60,40,20,10]
 
 
-#The MLP
-#has 2 hidden Layers
-#,len(Layers)-2.
-#first item
-#of Layers,60,
-#is the amount of
-#features in each
-#instance of training data
-#Last item of Layers
-#10, is number of classes
+"""The MLP
+has 2 hidden Layers
+#len(Layers)-2.
+first item
+of Layers,60,
+is the amount of
+features in each
+instance of training data
+Last item of Layers
+10, is number of classes"""
 
 
 n=MLP(Layers)
@@ -36,6 +39,7 @@ n=MLP(Layers)
 n.train(data,labels, epochs,batchsize,l_r,one_hot=True)
 
 #l_r is the learning_rate
+
 #save weights with
 #save_weights function
 
@@ -43,27 +47,28 @@ n.save_weights(weights_path,bias_path)
 
 n.load_weights(weights_path,bias_path)
 
-#Load weights from disk.
-#load_weights is
-#wrapped with
-#classmethod decorator
-#so after weights
-#and bias has been
-#saved with n.save_weights(...)
-#The weights can
-#then be used to make
-#predictions for a later time
-#Without initializing
-#the layers...E.g 
-#n=MLP.load_weights(...)
+"""
+Load weights from disk.
+load_weights is
+wrapped with
+classmethod decorator
+so after weights
+and bias has been
+saved with n.save_weights(...)
+The weights can
+then be used to make
+predictions for a later time
+Without initializing
+the layers...E.g 
+n=MLP.load_weights(...)"""
 
 n.predict(data)
+"""
+n.predicts can
+then be used to
+make predictions...
 
-#n.predicts can
-#then be used to
-#make predictions...
-
-#😄
+😄"""
 
 
 

@@ -62,11 +62,6 @@ def lab(hjk,mt):
             kl.append(j)
     return kl,l
 
-def turn(array):
-	ret=[]
-	for i in array.tolist():
-		ret.append(i[0])
-	return np.array(ret)
 def label(labels):
 	"""this function transforms categorical labels to integer encoded labels"""
 	lab_list=[]

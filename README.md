@@ -15,6 +15,7 @@ from MultilayerPerceptron import MLP
 ...
 
 #Your preferred
+
 #Preprocessing Technique
 #And Loading Of Data
 
@@ -41,6 +42,7 @@ n.train(data,labels, epochs,batchsize,l_r,one_hot=True)
 #l_r is the learning_rate
 
 #save weights with
+
 #save_weights function
 
 n.save_weights(weights_path,bias_path)
@@ -74,10 +76,13 @@ make predictions...
 
 The utils function is mainly for preprocessing
 Some functions included are:
+
 (1). Standardization :::utils.norm(mat), it returns the transformed dataset, the std learned and the mean
 ,Which can then be used on the test set by using utils.norm_test(mat,std,mean)
+
 (2). Min-Max Scaling::utils.min_max(mat),it returns the transformed dataset,the min, and the range.
 ,Which can then be used on the test set by using utils.min_max_test(mat,mins,_range)
+
 ###PCA and whitening should be added soon
 
 

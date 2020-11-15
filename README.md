@@ -4,7 +4,7 @@ Just Got up and Decided to clear the drought of repositories on my GitHub page.
 It Works on the principle of Back Propagation (All MLPs Do 😂), the ouput layer is Made up of Stacked Sigmoids...Lazy to adapt it to Softmax 😪.
 The network is initialized with the training set and the accompanying labels and  list, whose length connotes the amount of layers and the value of each layer index in the list denotes the amount of nodes that particular  layer should have,also a one_hot parameter ,that is by  default  set  to false...But can be Set to True if labels are already one_hot_encoded.
 The first layer of the list to be passed should be the Number of features and the last item of the list should be the amount of classes.
-
+"""python
 #Example usage
 
 #Import class
@@ -71,7 +71,7 @@ then be used to
 make predictions...
 
 😄"""
-
+"""
 
 
 The utils function is mainly for preprocessing
